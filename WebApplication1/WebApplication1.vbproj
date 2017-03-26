@@ -101,7 +101,7 @@
     <Content Include="CambiarPassword.aspx" />
     <Content Include="Confirmar.aspx" />
     <Content Include="Profesores\Estadisticas.aspx" />
-    <Content Include="Profesores\ExportarTareas.aspx" />
+    <Content Include="Profesores\Vadillo\ExportarTareas.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Profesores\ImportarTareasXMLDocument.aspx" />
     <Content Include="Profesores\ImportarVDataset.aspx" />
@@ -153,10 +153,10 @@
       <DependentUpon>Estadisticas.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Profesores\ExportarTareas.aspx.designer.vb">
+    <Compile Include="Profesores\Vadillo\ExportarTareas.aspx.designer.vb">
       <DependentUpon>ExportarTareas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Profesores\ExportarTareas.aspx.vb">
+    <Compile Include="Profesores\Vadillo\ExportarTareas.aspx.vb">
       <DependentUpon>ExportarTareas.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
@@ -291,6 +291,7 @@
     </None>
     <Content Include="packages.config" />
     <Content Include="Profesores\Web.config" />
+    <Content Include="Profesores\Vadillo\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

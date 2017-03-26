@@ -13,7 +13,7 @@
     <script src="js/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-    <form id="form1" runat="server" enableviewstate="true">
+    <form id="form1" runat="server" enableviewstate="true" >
         <div class="container">
             <div id="loginbox" style="margin-top: 50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                 <div class="panel panel-info">
@@ -31,16 +31,18 @@
                             <div class="input-group" style="margin-bottom: 35px" >
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                                 <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" Width="250px" placeholder="Tu email" BorderColor="#99CCFF" ViewStateMode="Enabled"></asp:TextBox><br />
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox1" ErrorMessage="Introduce un email" ForeColor="Red"></asp:RequiredFieldValidator>
-                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Introduce un Email válido" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+        
                             </div>
-
+                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox1" ErrorMessage="Introduce un email" ForeColor="Red"></asp:RequiredFieldValidator>
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Introduce un Email válido" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                             <br />
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                                 <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" Width="250px" placeholder="Password" BorderColor="#99CCFF" TextMode="Password"></asp:TextBox><br />
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox2" ErrorMessage="Introduce un Password" ForeColor="Red"></asp:RequiredFieldValidator>
+                                
                             </div>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox2" ErrorMessage="Introduce un Password" ForeColor="Red"></asp:RequiredFieldValidator>
+                            <br />
                             <asp:Literal ID="Literal1" runat="server"></asp:Literal>
                             <br />
                             &nbsp;&nbsp;<asp:Label ID="Label1" runat="server"></asp:Label>

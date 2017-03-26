@@ -39,17 +39,17 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
-        <div class="row">
+             <div class="row">
         <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked">
                 <li class="active"><a href="/Profesor.aspx"><i class="fa fa-home fa-fw"></i>Home</a></li>
          
-                <li><a href="/TareasProfesor.aspx"><i class="fa fa-file-o fa-fw"></i>VerTareas</a></li>
-                <li><a href="/Estadisticas.aspx"><i class="fa fa-table fa-fw"></i>Estadisticas</a></li>
-                <li><a href="/InsertarTarea.aspx"><i class="fa fa-tasks fa-fw"></i>Insertar tarea</a></li>
+                <li><a href="TareasProfesor.aspx"><i class="fa fa-file-o fa-fw"></i>VerTareas</a></li>
+                <li><a href="Estadisticas.aspx"><i class="fa fa-table fa-fw"></i>Estadisticas</a></li>
+                <li><a href="InsertarTarea.aspx"><i class="fa fa-tasks fa-fw"></i>Insertar tarea</a></li>
                 <li><a href="ImportarTareasXMLDocument.aspx"><i class="fa fa-calendar fa-fw"></i>Importar Tareas(XMLDocument)</a></li>
-                <li><a href="/ImportarVDataset.aspx">ImportarTareas(DataSet)</a></li>
-                <li><a href="ExportarTareas.aspx"><i class="fa fa-book fa-fw"></i>Exportar Tareas</a></li>
+                <li><a href="ImportarVDataset.aspx">ImportarTareas(DataSet)</a></li>
+                <li><a href="Vadillo/ExportarTareas.aspx"><i class="fa fa-book fa-fw"></i>Exportar Tareas</a></li>
                 <li><a href="#">OpcionFuture</a></li>
             </ul>
         </div>

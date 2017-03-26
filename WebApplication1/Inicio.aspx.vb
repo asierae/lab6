@@ -25,7 +25,12 @@ Public Class WebForm1
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim resp = tryLogin(TextBox1.Text, TextBox2.Text)
         If resp = "1" Then
-            FormsAuthentication.SetAuthCookie(Session("role"), False)
+            If TextBox1.Text = "vadillo@ehu.es" Then
+                FormsAuthentication.SetAuthCookie("vadillo@ehu.es", False)
+            Else
+                FormsAuthentication.SetAuthCookie(Session("role"), False)
+            End If
+
 
             If Session("role") = "P" Then
                 Response.Redirect("/Profesores/Profesor.aspx")

@@ -13,12 +13,12 @@ Public Class ImportarTareasXMLDocument
     Dim tbTareas As DataTable
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        If Session("logged") = False Then
-            Response.Redirect("Inicio.aspx?msj= Debes estar logueado para acceder")
-        ElseIf Session("role") = "A" Then
-            Response.Write("No Estas Autorizado para acceder a este reurso <a href='/Inicio.aspx'>Inicio</a>")
-            Response.End()
-        End If
+        'If Session("logged") = False Then
+        '    Response.Redirect("Inicio.aspx?msj= Debes estar logueado para acceder")
+        'ElseIf Session("role") = "A" Then
+        '    Response.Write("No Estas Autorizado para acceder a este reurso <a href='/Inicio.aspx'>Inicio</a>")
+        '    Response.End()
+        'End If
         If Not IsPostBack Then
 
             '' Cargar Lista Asignaturas, con el procedimiento almacenado no porque tarda y falla el selectedvalue
@@ -33,7 +33,9 @@ Public Class ImportarTareasXMLDocument
             DropDownList1.DataSource = tbAsig
             DropDownList1.DataValueField = "codigoasig"
             DropDownList1.DataBind()
-            DropDownList1.Items.Item(0).Selected = True ''Mostramos los datos de la primera asignatura al cargar
+            If tbAsig.Rows.Count > 0 Then
+                DropDownList1.Items.Item(0).Selected = True ''Mostramos los datos de la primera asignatura al cargar
+            End If
 
 
             '' Cargar Lista Tareas

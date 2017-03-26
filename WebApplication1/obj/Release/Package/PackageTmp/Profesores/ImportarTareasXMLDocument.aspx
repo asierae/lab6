@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="ImportarVDataset.aspx.vb" Inherits="WebApplication1.ImportarVDataset" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="ImportarTareasXMLDocument.aspx.vb" Inherits="WebApplication1.ImportarTareasXMLDocument" %>
 
 <!DOCTYPE html>
 
@@ -39,17 +39,17 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
-        <div class="row">
+              <div class="row">
         <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked">
                 <li class="active"><a href="/Profesor.aspx"><i class="fa fa-home fa-fw"></i>Home</a></li>
          
-                <li><a href="/TareasProfesor.aspx"><i class="fa fa-file-o fa-fw"></i>VerTareas</a></li>
-                <li><a href="/Estadisticas.aspx"><i class="fa fa-table fa-fw"></i>Estadisticas</a></li>
-                <li><a href="/InsertarTarea.aspx"><i class="fa fa-tasks fa-fw"></i>Insertar tarea</a></li>
+                <li><a href="TareasProfesor.aspx"><i class="fa fa-file-o fa-fw"></i>VerTareas</a></li>
+                <li><a href="Estadisticas.aspx"><i class="fa fa-table fa-fw"></i>Estadisticas</a></li>
+                <li><a href="InsertarTarea.aspx"><i class="fa fa-tasks fa-fw"></i>Insertar tarea</a></li>
                 <li><a href="ImportarTareasXMLDocument.aspx"><i class="fa fa-calendar fa-fw"></i>Importar Tareas(XMLDocument)</a></li>
-                <li><a href="/ImportarVDataset.aspx">ImportarTareas(DataSet)</a></li>
-                <li><a href="ExportarTareas.aspx"><i class="fa fa-book fa-fw"></i>Exportar Tareas</a></li>
+                <li><a href="ImportarVDataset.aspx">ImportarTareas(DataSet)</a></li>
+                <li><a href="Vadillo/ExportarTareas.aspx"><i class="fa fa-book fa-fw"></i>Exportar Tareas</a></li>
                 <li><a href="#">OpcionFuture</a></li>
             </ul>
         </div>
@@ -72,33 +72,29 @@
             &nbsp;
                 </td>
             
-             <td class="auto-style1">
-            <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="451px">
-                <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
-                <EditRowStyle BackColor="#999999" />
-                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
-                <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
-                <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
-                <SortedAscendingCellStyle BackColor="#E9E7E2" />
-                <SortedAscendingHeaderStyle BackColor="#506C8C" />
-                <SortedDescendingCellStyle BackColor="#FFFDF8" />
-                <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
-            </asp:GridView>
-            <br /></td>
+             <td class="auto-style1"><br /></td>
         <td class="auto-style1">
-            <br />
+            <asp:Xml ID="Xml1" runat="server" TransformSource="~/App_Data/XSLTFile.xsl"></asp:Xml><br />
    <asp:Label ID="Label1" runat="server"></asp:Label>
             <br />
             <br />
-             <asp:Button ID="Button1" CssClass="btn btn-default" runat="server" Text="Importar Tareas XML" />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+             <asp:Button ID="Button1" CssClass="btn btn-default" runat="server" Text="Importar Tareas XMLD" />
+        &nbsp;&nbsp;&nbsp;&nbsp;<br />
+            <br />
+            &nbsp;&nbsp;&nbsp;      
         </td>
         </table>
         
+            <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False">XSLT Sort Código</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;
+            <asp:LinkButton ID="LinkButton3" runat="server" CausesValidation="False">XSLT Sort HEstim</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;
+            <asp:LinkButton ID="LinkButton4" runat="server" CausesValidation="False">XSLT Sort Descrip</asp:LinkButton>
+        
         </div>
               </div>
+     
+        
      
     </form>
     <p>

@@ -21,18 +21,28 @@
             <asp:Label ID="Label1" runat="server" Font-Size="X-Small"></asp:Label>
 
         </strong>
-        <table><td>
-        <h5><strong>Email:&nbsp;(*)</strong><asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" Width="200px" ForeColor="Black"></asp:TextBox>
+        <table>
+            <table>
+                <td>
+        <h5><strong>Email:&nbsp;(*)</strong></h5><asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" Width="200px" ForeColor="Black"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox1" ErrorMessage="Introduce un email" ForeColor="Red"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Introduce un email válido" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-        </h5>
+        </h5></td>
+                <td>
+                    <h5><strong>Role:</strong></h5>
+                <asp:DropDownList ID="DropDownList1" CssClass="form-control" width="250px" runat="server">
+                    <asp:ListItem Selected="True" Value="A">Alumno</asp:ListItem>
+                    <asp:ListItem Value="P">Profesor</asp:ListItem>
+                    </asp:DropDownList>
+                    </td>
+               </table>
         <h5><strong>Nombre y Apellidos:&nbsp;(*)&nbsp;</strong><asp:TextBox ID="TextBox2" runat="server"  CssClass="form-control" Width="200px" ForeColor="Black"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox2" ErrorMessage="Introduce tu nombre y apellido" ForeColor="Red"></asp:RequiredFieldValidator>
             <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Introduce nombre y apellidos" ForeColor="Red" ValidationExpression="([a-zA-Z]+)\s([a-zA-Z]+)\s{0,1}([a-zA-Z]*)"></asp:RegularExpressionValidator>
         </h5>
         <h5><strong>DNI:(*)</strong><asp:TextBox ID="TextBox3" runat="server"  CssClass="form-control" Width="200px"  ForeColor="Black"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox3" ErrorMessage="Introduce tu DNI" ForeColor="Red"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="Introduce un DNI válido" ForeColor="Red" ValidationExpression="\d{8}[a-zA-Z]{1}"></asp:RegularExpressionValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="Introduce un DNI válido" ForeColor="Red" ValidationExpression="\d{8}"></asp:RegularExpressionValidator>
         </h5>
         <h5><strong>Password:(*)</strong><asp:TextBox ID="TextBox4" runat="server" CssClass="form-control" Width="200px" ForeColor="Black" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox4" ErrorMessage="Introduce un password" ForeColor="Red"></asp:RequiredFieldValidator>

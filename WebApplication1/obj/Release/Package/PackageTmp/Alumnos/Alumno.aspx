@@ -47,7 +47,7 @@
         <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked">
                 <li class="active"><a href="#"><i class="fa fa-home fa-fw"></i>Home</a></li>
-            <li><a href="/TareasAlumno.aspx"><i class="fa fa-file-o fa-fw"></i>Tareas Alumno</a></li>
+            <li><a href="TareasAlumno.aspx"><i class="fa fa-file-o fa-fw"></i>Tareas Alumno</a></li>
                 <li><a href="#"><i class="fa fa-file-o fa-fw"></i>Asignaturas</a></li>
                 <li><a href="#"><i class="fa fa-bar-chart-o fa-fw"></i>Tareas Propias</a></li>
                 <li><a href="#"><i class="fa fa-table fa-fw"></i>Grupos</a></li>

@@ -16,3 +16,6 @@ C:\Users\Asierae\Documents\Visual Studio 2013\Projects\WebApplication1\WebApplic
 C:\Users\Asierae\Documents\Visual Studio 2013\Projects\WebApplication1\WebApplication1\obj\Release\WebApplication1.pdb
 C:\Users\Asierae\Documents\Visual Studio 2013\Projects\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
 C:\Users\Asierae\Documents\Visual Studio 2013\Projects\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\Asierae\Documents\Visual Studio 2013\Projects\WebApplication1\WebApplication1\bin\crypto.dll
+C:\Users\Asierae\Documents\Visual Studio 2013\Projects\WebApplication1\WebApplication1\bin\crypto.pdb
+C:\Users\Asierae\Documents\Visual Studio 2013\Projects\WebApplication1\WebApplication1\bin\crypto.xml
