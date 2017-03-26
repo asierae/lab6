@@ -35,7 +35,7 @@ Public Class WebForm1
             If Session("role") = "P" Then
                 Response.Redirect("/Profesores/Profesor.aspx")
             ElseIf Session("role") = "A" Then
-                Response.Redirect("/Alumons/Alumno.aspx")
+                Response.Redirect("/Alumnos/Alumno.aspx")
             ElseIf Session("role") = "ADMIN" Then
                 Response.Redirect("/Admin/GestionUsuarios.aspx")
             Else
